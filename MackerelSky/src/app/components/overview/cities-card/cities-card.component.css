@@ -1,0 +1,28 @@
+.card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+
+mat-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.city-card{
+    max-width: 25%;
+}
+
+mat-card-content{
+    text-align: center;
+    margin: 30px auto;
+}
+
+mat-card-content > * {
+    margin: 30px auto;
+}
+

@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>brightness_4</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>map</mat-icon>
+            <span>Countries</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>directions_car_filled</mat-icon>
+            <span>Cities</span>
+        </button>
+    </mat-menu>
+    <span>Mackerel Sky</span>
+    <span class="nav-spacer"></span>
+    <button mat-icon-button aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>

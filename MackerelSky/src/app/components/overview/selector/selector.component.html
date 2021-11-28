@@ -1,0 +1,17 @@
+  <mat-form-field appearance="fill">
+    <mat-label>Cities</mat-label>
+    <mat-select [formControl]="cities" multiple>
+      <mat-select-trigger>
+        {{cities.value ? cities.value[0] : ''}}
+        <span *ngIf="cities.value?.length > 1">
+          (+{{cities.value.length - 1}} {{cities.value?.length === 2 ? 'other' : 'others'}})
+        </span>
+      </mat-select-trigger>
+      <mat-option 
+        *ngFor="let city of CitiesList" 
+        [value]="city"
+        [disabled]="isOptionDisabled(city)">
+        {{city}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
